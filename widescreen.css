@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+:root {
+  --color-text-primary: #1F2936;
+  --color-text-placeholder: #798EAE;
+  --color-bg-primary: #f9fafb;
+  --color-bg-secondary: #ECECFD;
+  --color-bg-sidebar: #FFFFFF;
+  --color-border-hr: #E2E8F0;
+  --color-hover-primary: #dbdbdb;
+  --color-hover-secondary: #e2e2fb;
+  --color-shadow: rgba(0, 0, 0, 0.05);
+}
+body{
+    background: var(--color-bg-primary);
+}
+.sidebar{
+    position: sticky;
+    background: var(--color-bg-sidebar);
+    top: 0;
+    height: 100vh;
+    width: 64px;
+    border-right: 1px solid var(--color-border-hr);
+    box-shadow: 0 3px 9px var(--color-shadow);
+}
+.sidebar-content{
+    flex: 1;
+    padding:0px;
+    overflow: hidden auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-text-placeholder) transparent;
+
+}
+.sidebar .sidebar-header{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border-hr);
+}
+.header-logo{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    display: block;
+    margin-left: 8px;
+}
+.sidebar-content .menu-list{
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    list-style: none;
+}
+
+.menu-list .menu-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    transition: 0.3s ease;
+}
+.menu-list .menu-link:hover{
+    color: #fff;
+    background: var(--color-hover-primary);
+}
+.sidebar-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.feature-page{
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--color-border-hr);
+}
+.hidden-text{
+    display: none;
+}
+.nav-bar{
+     position: sticky;
+  top: 0;
+    width: 100%;
+    height: 128px;
+    border-bottom: 1px solid var(--color-border-hr);
+    background-color: #fff;
+}
+.upper-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    
+    padding: 10px 20px;
+
+}
+.top-content{
+    display: flex;
+    flex-direction: row;
+}
+.searchbar{
+    width: 80%;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius:  28px;
+    background: #eaebeb;
+}
+.searchbar input{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+.Getplus{
+    padding: 10px 10px;
+    white-space: nowrap;       
+         height:40px;       
+}
+.getplus{
+    text-decoration: none;
+    padding: 10px;
+    color: #1F2936;
+    font-weight:bold;
+}
+.login{
+       /* margin-left: 20px;
+       margin-right: 20px; */
+         white-space: nowrap;
+            height:40px;
+            width: 80px;
+            padding: 10px 10px;
+}
+.log{
+    text-decoration: none;
+    color:#798EAE;
+    font-weight: 100;
+}
+.log:hover{
+    color: #1F2936;
+}
+.submit{
+    height:30px;
+    border-radius: 10px;
+    border: #798EAE;
+    box-shadow: #1F2936;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 10px;
+    top: 0;
+    margin-left: 10px;
+    margin-top: 8px;
+    color: #798EAE;
+}
+.submit:hover{
+    color: #1F2936;
+    border: #1F2936;
+}
+.pages{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 16px;
+     width: 100%;
+    height: 64px;
+    padding: 20px;
+    white-space: nowrap;
+}
+.feature{
+    list-style: none;
+}
+.featured{
+    text-decoration: none;
+    color:#798EAE;
+    font-weight:500;
+}
+
+.featured:hover{
+    color: #000;
+    transition: 0.2s ease-out;
+}
+.active{
+    text-decoration: none;
+    color:#000000;
+}
+.main-page{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+}
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    height: 418px;
+    padding: 40px 20px;
+    gap: 24px;
+}
+.title-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 10px;
+    padding: 20px;
+    width: 40%;
+        height: 290px;
+    margin: 0% 5%;
+    gap: 5px;
+}
+.title-searchbar{
+    width: 80%;
+    max-width: 500px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius:  10px;
+    background: #eaebeb;
+}
+.title-search-input{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.collection-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 290px;
+    width: 40%;
+    max-width: 350px;
+    border:2px solid #1F2936;
+    border-radius: 10px;
+    box-shadow: 0 3px 9px var(--color-shadow);
+    padding: 10px;
+    gap: 13px;
+
+}
+.poster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: 290px;
+    width: 40%;
+    max-width: 350px;
+    border:2px solid #1F2936;
+    border-radius: 10px;
+    box-shadow: 0 3px 9px var(--color-shadow);
+    padding: 20px;
+}
+.text-see{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    margin: 10px;
+    gap: 10px;
+}
+.see{
+    color: #1F2936;
+}
+.see:hover{
+    color: #dbdbdb;
+}
+h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.collection-item{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+        align-items: center;
+    white-space: nowrap;
+    padding: 20px;
+    height: 24px;
+}
+h7{
+    font-size: small;
+    font-weight: bold;
+}
+h10{
+    font-size: smaller;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.collection-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 3px;
+}
+.collection-item:hover{
+    background-color: #dbdbdb;
+    border-radius: 3px;
+    height: 40px;
+}
+.poster h2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.poster h5{
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter;
+
+}
+.images-section{
+    columns: 300px;
+
+}
+img{
+    width: 100%;
+
+}
+.dropdown-nav{
+    display: none;
+    
+}
